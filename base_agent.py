@@ -15,9 +15,10 @@ class BaseAgent(object):
 
     def get_action(self, state):
         """
-        If no agent is specified, select action randomly
+        Empty function
+        Select an action using the agent's policy
         """
-        return self.actions[np.random.choice(range(len(self.actions)))]
+        pass
 
     def update(self, state, action, reward, next_state, is_done=False):
         """

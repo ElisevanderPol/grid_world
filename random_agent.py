@@ -11,3 +11,9 @@ class RandomAgent(BaseAgent):
         Initialize the agent
         """
         super(RandomAgent, self).__init__(actions, state_dim)
+
+    def get_action(self, state):
+        """
+        Return randomly sampled action
+        """
+        return self.actions[np.random.choice(range(len(self.actions)))]
