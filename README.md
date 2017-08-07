@@ -6,4 +6,5 @@ finding the treasure) without hitting the traps on the way.
 
 An example agent is random_agent.py (which inherits from base_agent.py) and the
 problem itself (including transition function and reward function) is specified
-in treasure_hunt.py
+in treasure_hunt.py. The wrapper that interacts with the agent and environment
+is in basic_loop.py
