@@ -5,15 +5,12 @@ class BaseAgent(object):
     Create an agent that returns random actions for every observation
     """
 
-    def __init__(self, actions, state_dim, gamma=0.9, min_reward=-1,
-                 max_reward=1):
+    def __init__(self, actions, state_dim, gamma=0.9)
         """
         Initialize the agent
         """
         self.actions = actions
         self.state_dim = state_dim
-        self.min_r = min_reward
-        self.max_r = max_reward
         self.gamma = gamma
 
     def get_action(self, state):
@@ -25,23 +22,14 @@ class BaseAgent(object):
     def update(self, state, action, reward, next_state, is_done=False):
         """
         Empty function
+        Use the (state, action, reward, next_state) tuple sampled from the
+        environment to update the agent in some way
         """
         pass
-
-    def pretty_print(self):
-        """
-        Empty function
-        """
-        pass
-
-    def episode_end(self):
-        """
-        Empty function
-        """
-        return True
 
     def plot(self):
         """
         Empty function
+        Plot the value functions found by the agent, if applicable
         """
         pass

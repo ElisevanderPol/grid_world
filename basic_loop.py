@@ -61,6 +61,7 @@ class Experiment(object):
                     break
             r_list.append(total_r)
             total_r = 0
+        # Plot the found value functions, if applicable
         self.agent.plot()
         return r_list
 
