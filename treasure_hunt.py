@@ -12,7 +12,6 @@ class TreasureHunt(object):
         corresponding shape of the grid world, and the probability that the
         agent will slip and go in a random direction after taking an action
         """
-        self.n_actions = 4
         self.n_states = n_states
         self.grid_shape = grid_shape
         self.state_size = len(grid_shape)
