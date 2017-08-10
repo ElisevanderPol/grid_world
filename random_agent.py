@@ -1,5 +1,6 @@
 from base_agent import BaseAgent
 import numpy as np
+import random
 
 class RandomAgent(BaseAgent):
     """
@@ -16,4 +17,4 @@ class RandomAgent(BaseAgent):
         """
         Return randomly sampled action
         """
-        return self.actions[np.random.choice(range(len(self.actions)))]
+        return random.choice(self.actions)

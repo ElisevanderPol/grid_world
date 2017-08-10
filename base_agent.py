@@ -5,7 +5,7 @@ class BaseAgent(object):
     Create an agent that returns random actions for every observation
     """
 
-    def __init__(self, actions, state_dim, gamma=0.9)
+    def __init__(self, actions, state_dim, gamma=0.9):
         """
         Initialize the agent
         """
